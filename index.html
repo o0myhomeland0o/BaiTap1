@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Classical Ciphers — Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="card">
+  <h2>Classical Ciphers — Demo (Caesar, Affine, Columnar, Vigenere, Playfair)</h2>
+
+  <label>Chọn cipher</label>
+  <select id="cipher">
+    <option value="caesar">Caesar</option>
+    <option value="affine">Affine</option>
+    <option value="columnar">Columnar Transposition</option>
+    <option value="vigenere">Vigenère</option>
+    <option value="playfair">Playfair</option>
+  </select>
+
+  <div id="params" style="margin-top:12px">
+    <!-- dynamic params -->
+  </div>
+
+  <label style="margin-top:8px">Input text</label>
+  <textarea id="input"></textarea>
+
+  <div style="margin-top:10px" class="row">
+    <div class="col">
+      <button class="btn-primary" onclick="doEnc()">Encrypt</button>
+      <button class="btn-ghost" onclick="doDec()">Decrypt</button>
+    </div>
+    <div class="col">
+      <label>Output</label>
+      <pre id="output"></pre>
+    </div>
+  </div>
+
+  <details style="margin-top:10px">
+    <summary>Ghi chú</summary>
+    <ul>
+      <li>Caesar: key là số (shift)</li>
+      <li>Affine: key là "a,b" (ví dụ 5,8) với gcd(a,26)=1</li>
+      <li>Columnar: key là 1 từ (ví dụ SECRET)</li>
+      <li>Vigenère: key là 1 từ</li>
+      <li>Playfair: J được gộp vào I</li>
+    </ul>
+  </details>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
