@@ -15,7 +15,7 @@ Cài đặt thuật toán mã hoá và giải mã bằng code C++ và bằng htm
   
 ============================
 
-# Tên : Mật mã Caesar  
+# Tên gọi : Mật mã Caesar  
 Thuật toán (mã / giải):  
 * Với chữ cái   
 𝑥(0..25), khoá 𝑘∈{0..25}  
@@ -38,7 +38,7 @@ Phân tích tần suất: so sánh tần suất ký tự với phân bố tiến
 * Giải mã (Decrypt):  
 <img width="1195" height="848" alt="image" src="https://github.com/user-attachments/assets/53aa7354-fdff-45c1-abff-66b12b957e7f" />
   
-# Tên: Affine cipher  
+# Tên gọi: Affine cipher  
   
 * Thuật toán:    
 Khoá là cặp (a,b) với a và 26 nguyên tố cùng nhau (gcd(a,26)=1), b∈{0..25}    
@@ -61,7 +61,7 @@ Khi dùng cho chữ đơn (monoalphabetic), phân tích tần suất hữu dụn
 * Giải mã (Decrypt):
   <img width="1202" height="833" alt="image" src="https://github.com/user-attachments/assets/2f0e72dc-0b68-4438-bdb8-079dfcc6cf24" />  
 
-# Tên: Hoán vị / Columnar Transposition  
+# Tên gọi : Hoán vị / Columnar Transposition  
 
 * Thuật toán (mã hoá):  
 Khoá: một từ/chuỗi ký tự (ví dụ "ZEBRA") — suy ra thứ tự cột bằng cách sắp chữ cái theo bảng chữ cái.  
@@ -82,7 +82,7 @@ Nếu dùng permutation dài n thì không gian khoá = n! (rất lớn). Với 
 * Giải mã (Decrypt):
   <img width="1187" height="829" alt="image" src="https://github.com/user-attachments/assets/66183511-4fcd-4e76-8748-b158e335169b" />
 
-# Tên: Vigenère
+# Tên gọi : Vigenère
 
 * Thuật toán:  
 Khoá: một chuỗi ký tự (khóa) dài m.
@@ -107,7 +107,7 @@ Khi biết m, mỗi cột là Caesar cipher → dùng phân tích tần suất.
 * Giải mã (Decrypt):
   <img width="1182" height="823" alt="image" src="https://github.com/user-attachments/assets/b312f073-9abb-4923-a0b6-abb03bbf270c" />
 
-# Tên: Playfair cipher (mã cặp đôi, 5×5)
+# Tên gọi : Playfair cipher (mã cặp đôi, 5×5)
 
 * Ý tưởng / Thuật toán:  
 Tạo ma trận 5×5 từ khoá: ghi các chữ cái trong khoá (không trùng), tiếp theo các chữ còn lại (gộp J vào I).  
