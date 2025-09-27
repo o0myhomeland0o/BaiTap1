@@ -54,6 +54,7 @@ Brute force 312 khả năng.
 Nếu có plaintext-ngữ nghĩa, hoặc tần suất: chỉ cần xác định 2 cặp plaintext-ciphertext (two-letter frequency) để giải cho a,b.  
 Khi dùng cho chữ đơn (monoalphabetic), phân tích tần suất hữu dụng.  
 
+# Ảnh minh họa :  
 * Mã hóa (Encrypt):
   <img width="1198" height="841" alt="image" src="https://github.com/user-attachments/assets/74039ae2-1e3c-4f51-b4cc-eb2fd455f8db" />  
 
@@ -74,6 +75,7 @@ Xác định số cột có 1 ô thiếu nếu plaintext không kín; chia ciphe
 * Không gian khoá:  
 Nếu dùng permutation dài n thì không gian khoá = n! (rất lớn). Với khoá là một từ có độ dài k: có nhiều hoán vị khác nhau (<=26^k nếu là chữ cái) nhưng thực tế là k! hoán vị vị trí.
 
+# Ảnh minh họa
 * Mã hóa (Encrypt):  
   <img width="1186" height="836" alt="image" src="https://github.com/user-attachments/assets/475874bc-2a37-471f-bc00-732192a40373" />
 
@@ -98,8 +100,13 @@ Kasiski test: tìm khoảng cách giữa các cụm lặp → ước lượng đ
 Index of Coincidence (IC): ước lượng m bằng cách phân chia và tính IC.  
 Khi biết m, mỗi cột là Caesar cipher → dùng phân tích tần suất.  
 
+# Ảnh minh họa :  
 * Mã hóa (Encrypt):
+  <img width="1192" height="843" alt="image" src="https://github.com/user-attachments/assets/bb264ad1-7d7c-4c32-af38-9d5faac45618" />
+
 * Giải mã (Decrypt):
+  <img width="1182" height="823" alt="image" src="https://github.com/user-attachments/assets/b312f073-9abb-4923-a0b6-abb03bbf270c" />
+
 # Tên: Playfair cipher (mã cặp đôi, 5×5)
 
 * Ý tưởng / Thuật toán:  
@@ -124,6 +131,7 @@ Số ma trận 5×5 sắp xếp 25 chữ = 25! ≈ 1.55×10^25 (rất lớn). Nh
 Phân tích digraph tần suất; tấn công dựa trên mẫu từ (độ dài digraph, bigram frequencies).  
 So với monoalphabetic, Playfair phức tạp hơn nhưng vẫn bị tấn công bằng kỹ thuật thống kê và brute-force/heuristic.  
 
+# Ảnh minh họa :  
 * Mã hóa (Encrypt):
   <img width="1193" height="837" alt="image" src="https://github.com/user-attachments/assets/50dae9f6-5626-4084-82d0-fd9feb24453b" />
 
